@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- Page Content -->
+    <div class="container">
+        <h2>Products</h2>
+
+        <!-- Categories Section -->
+        <section class="mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="/30bore_pistols">
+                        <img src="{{ url_for('static', filename='30borepistol.jpg') }}" class="img-fluid" alt="30 Bore Pistols">
+                    </a>
+                    <h3>30 Bore Pistols</h3>
+                    <p>Discover the exceptional world of 30 bore pistols, where power meets precision.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/9mm_pistols">
+                        <img src="{{ url_for('static', filename='g1.png') }}" class="img-fluid" alt="9mm Pistols">
+                    </a>
+                    <h3>9mm Pistols</h3>
+                    <p>Explore our collection of 9mm pistols, known for their accuracy and reliability.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/12bore_short_guns">
+                        <img src="{{ url_for('static', filename='12BoreShortGuns.png') }}" class="img-fluid" alt="12 Bore Short Guns">
+                    </a>
+                    <h3>12 Bore Short Guns</h3>
+                    <p>Discover the power and versatility of our 12 bore short guns for various shooting applications.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/guns">
+                        <img src="{{ url_for('static', filename='download1.jpg') }}" class="img-fluid" alt="Guns">
+                    </a>
+                    <h3>Guns</h3>
+                    <p>Explore our wide range of guns suitable for different shooting needs.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/ammunitions">
+                        <img src="{{ url_for('static', filename='ammunition.jpg') }}" class="img-fluid" alt="Ammunitions">
+                    </a>
+                    <h3>Ammunitions</h3>
+                    <p>Find high-quality ammunition to complement your firearms.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="/accessories">
+                        <img src="{{ url_for('static', filename='pouchs.jpg') }}" class="img-fluid" alt="Accessories">
+                    </a>
+                    <h3>Accessories</h3>
+                    <p>Enhance your shooting experience with our range of accessories.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Sections for Each Category -->
+        <!-- Add sections for individual categories as needed -->
+
+        <!-- Contact Information -->
+        <section class="mt-4">
+            <h3>Have Questions or Ready to Make a Purchase?</h3>
+            <p>Contact our knowledgeable team for expert assistance.</p>
+            <p>Your satisfaction and safety are our top priorities.</p>
+        </section>
+    </div> 
+{% endblock %}
+

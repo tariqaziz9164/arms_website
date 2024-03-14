@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+ <div class="container mt-4">
+        <h2 class="mb-4">9mm Pistols</h2>
+
+        <!-- Product Showcase -->
+        <div class="row">
+           {% for product in products9mm %}
+           <div class="col-md-4 mb-4">
+               <div class="card">
+                  <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
+
+                  <div class="card-body">
+                     <h5 class="card-title">{{ product['name'] }}</h5>
+                     <p class="card-text">{{ product['description'] }}</p>
+                     <p class="card-text"><strong>Price:</strong> ${{ product['price'] }}</p>
+                  </div>
+               </div>
+            </div>
+           {% endfor %}
+        </div>
+
+</div>
+
+
+<section class="container text-center">
+    <h2>Early 9mm Pistol Development</h2>
+    <p>The 9mm Parabellum cartridge, commonly known as 9mm Luger, was introduced in 1902 by the German weapons manufacturer Deutsche Waffen- und Munitionsfabriken (DWM). Georg Luger designed this cartridge for the Luger P08 pistol.</p>
+
+    <h2>Widespread Adoption</h2>
+    <p>The 9mm Parabellum cartridge gained widespread adoption due to its balanced combination of stopping power and manageable recoil. Its effectiveness and versatility made it a popular choice for military and law enforcement agencies around the world.</p>
+
+    <h2>Modern Era</h2>
+    <p>Over the years, many firearm manufacturers started producing 9mm pistols, contributing to the widespread use of this caliber in both military and civilian applications. Notable firearm manufacturers such as Glock, Beretta, Heckler & Koch, and SIG Sauer have produced iconic 9mm pistols that are widely used by military, law enforcement, and civilian shooters.</p>
+
+    <h2>Features of 9mm Pistols</h2>
+    <p>9mm pistols are known for their moderate recoil, allowing for quicker follow-up shots and increased accuracy. The caliber is versatile, suitable for self-defense, sport shooting, and professional use. High-capacity magazines are common for 9mm pistols, providing users with more rounds before reloading.</p>
+
+    <h2>Continued Innovation</h2>
+    <p>The 9mm caliber continues to be a popular choice, and modern 9mm pistols often feature advancements in materials, design, and technology. Polymer-framed pistols, striker-fired mechanisms, and modular designs 
+     are some of the innovations seen in contemporary 9mm handguns.</p>
+
+        <h2>Glock 9mm Pistols</h2>
+
+        <!-- Introduction -->
+        <section class="mt-4">
+            <p>The Glock 9mm pistols represent a paradigm shift in firearm design, incorporating cutting-edge features that have set industry standards. Let's explore the key characteristics of Glock's 9mm handguns.</p>
+        </section>
+
+        <!-- Polymer Frame -->
+        <section class="mt-4">
+            <h3>Polymer Frame</h3>
+            <p>One of the defining features of Glock pistols is their innovative use of a polymer frame. Crafted from high-strength, impact-resistant polymer, Glock handguns boast lightweight and durable constructions, setting them apart from traditional metal-framed firearms.</p>
+        </section>
+
+        <!-- Striker-Fired Action -->
+        <section class="mt-4">
+            <h3>Striker-Fired Action</h3>
+            <p>Glock pistols utilize a striker-fired action, eliminating the need for an external hammer. This design choice results in a consistent trigger pull and contributes to the overall simplicity of the firearm's internal mechanics.</p>
+        </section>
+
+        <!-- Modular Design -->
+        <section class="mt-4">
+            <h3>Modular Design</h3>
+            <p>Glock's commitment to user customization is evident in the modular design of their handguns. Shooters can easily adapt the pistol to their preferences by changing grips, backstraps, and other components.</p>
+        </section>
+
+        <!-- Safe Action System -->
+        <section class="mt-4">
+            <h3>Safe Action System</h3>
+            <p>The Glock Safe Action system is designed to provide a consistent trigger pull and minimize the risk of accidental discharges. The trigger safety is a small lever embedded in the center of the trigger, requiring intentional pressure on the trigger to deactivate it. This, in conjunction with the other internal safeties, contributes to the overall safety of the firearm.</p>
+        </section>
+
+        <!-- Large Magazine Capacity -->
+        <section class="mt-4">
+            <h3>Large Magazine Capacity</h3>
+            <p>Glock 9mm models often feature a generous magazine capacity, catering to a wide range of users. Whether for civilian or law enforcement use, these pistols offer ample ammunition capacity for various scenarios.</p>
+        </section>
+
+        <!-- Reliability -->
+        <section class="mt-4">
+            <h3>Reliability</h3>
+            <p>The hallmark of Glock pistols is their unparalleled reliability. Engineered for optimal performance in adverse conditions, Glocks are known for their durability and minimal maintenance requirements.</p>
+        </section>
+
+        <!-- Widespread Adoption -->
+        <section class="mt-4">
+            <h3>Widespread Adoption</h3>
+            <p>Glock 9mm pistols have achieved global recognition and adoption by military, law enforcement, and civilian users. Their reputation for reliability and performance has solidified their place as a top choice in the firearms industry.</p>
+        </section>
+
+
+
+</section>
+
+{% endblock %}

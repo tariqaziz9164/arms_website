@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "container text-center">
+
+<h2>About China Arms Company</h2>
+<p>Welcome to China Arms Company – Your Trusted Source for Quality Arms and Ammunition.</p>
+
+<h4>Company Overview:</h4>
+<p>China Arms Company is a registered and authorized dealer of arms and ammunition, dedicated to providing reliable and high-quality products to our valued customers. With a commitment to excellence, we adhere to all government regulations and requirements, ensuring that our operations meet the highest standards of legality and integrity.</p>
+
+
+
+<h2>Government Compliance:</h2>
+
+<p>We take pride in our strict adherence to government regulations, holding essential certificates such as:</p>
+
+  <h3>Form X (10):</h3><p> Authorizing the saling and purchaising of Pistols and 12 Bore short guns and their ammunition</p>
+  <h3>Form IX (12):</h3><p> Authorizing the saling and purchasing of  of NPB guns , breech loading guns and ammunitions. </p>
+  <h3>Form XIII (13):</h3><p> Reparing of all NPB pistols , 12 Bore and Guns</p>
+  <h3>Our Founder:</h3>
+  <p>China Arms Company was founded by Mr. Tariq Aziz, a visionary entrepreneur with a passion for firearms and a commitment to safety. Mr. Aziz's dedication to transparency, ethics, and customer satisfaction has shaped the company's principles.Tariq Aziz is a webdeveloper build some projects.</p>
+
+  <p>My projects projects are located on Github which is a free hosting for developers.</p>
+  <a href="{{ 'https://github.com/tariqaziz9164' }}">Click here to visit my Github profile </a>
+  <p>Reed more about Owner , click
+  <a href="{{ url_for('moreabout') }}">Tariq Aziz</a></p>
+
+  <h3>Website Development:</h3>
+  <p>This website has been meticulously developed by Mr. Tariq Aziz himself, combining his expertise in both the arms industry and web development. Our user-friendly interface aims to provide visitors with a seamless experience, allowing easy navigation and access to essential information.
+  <a href="{{ url_for('moreabout_web') }}">More about Website developmrent</a></p>
+
+  <h3>More Information:</h3>
+
+  <p>For additional details about our company, certifications, and the range of products we offer, click the button below to explore our comprehensive information page.
+
+   <a href="{{ url_for('moreinfo') }}">Explore More Information</a>
+
+  At China Arms Company, we prioritize your safety and satisfaction. Feel free to contact us with any inquiries or visit our store to experience our commitment to quality firsthand.
+</p>
+
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+ <div class="container text-center">
+        <h2 class="mb-4">30 Bore Pistols</h2>
+
+        <!-- Product Showcase -->
+        <div class="row">
+    {% for product in products30bor %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ product['name'] }}</h5>
+                    <p class="card-text">{{ product['description'] }}</p>
+                    <p class="card-text"><strong>Price:</strong> ${{ product['price'] }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+ </div>
+        <!-- Information about 30 Bore Pistols -->
+        <section class="container text-center">
+            <h3>About 30 Bore Pistols</h3>
+            <p>30 bore pistols are renowned for their precision and reliability. These pistols come in various models, each designed to meet specific needs, whether for personal defense, sport shooting, or professional use.</p>
+          
+            <h2> German-made 30 Bore Pistols</h2>
+            <p>German-made 30 bore pistols hold a significant place in the history of firearms, representing precision engineering and quality craftsmanship. These pistols emerged during a period when Germany was a key player in the development of small arms.</p>
+
+            <h4>Early Innovations:</h4>
+            <p>The development of 30 bore pistols in Germany can be traced back to the late 19th century, a time when advancements in firearm technology were rapidly evolving. German gunsmiths and manufacturers played a pivotal role in introducing innovative features and designs that influenced the global firearms industry.</p>
+
+            <h4>World Wars Era:</h4>
+            <p>The two World Wars marked a crucial period for German-made firearms, including 30 bore pistols. Manufacturers like Mauser and Walther produced iconic models that gained recognition for their reliability and performance on the battlefield.</p>
+
+            <h4>Post-War Influence:</h4>
+            <p>After World War II, German firearm manufacturers continued to contribute to the evolution of 30 bore pistols. The emphasis on precision engineering and adherence to quality standards became synonymous with German-made firearms.</p>
+
+            <h4>Russian-made 30 Bore Pistols</h4>
+            <p>Russian-made 30 bore pistols have a storied history, reflecting the nation's commitment to producing reliable firearms for various purposes. The Russian firearms industry has been influenced by both military and civilian needs.</p>
+
+            <h4>Soviet Era Development:</h4>
+            <p> During the Soviet era, Russia became a major producer of small arms, including 30 bore pistols. The emphasis on simplicity, ruggedness, and ease of production resulted in models that were well-suited for military and law enforcement use.</p>
+
+            <h4>Cold War Influence:</h4>
+            <p>The Cold War era saw the widespread adoption of Russian-made 30 bore pistols by military and police forces in the Eastern Bloc and allied nations. Models like the Makarov PM gained international recognition for their durability and straightforward design.</p>
+
+            <h4> Post-Soviet Era: </h4>
+            <p>Following the dissolution of the Soviet Union, Russian firearm manufacturers continued to produce 30 bore pistols, catering to both domestic and export markets. Modern Russian-made pistols often incorporate updated features and materials while retaining the robustness of earlier designs.</p>
+
+          
+
+        </section>
+    </div>
+{% endblock %}

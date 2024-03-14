@@ -1,0 +1,67 @@
+/* styles.css */
+
+/* Add space from the top */
+body {
+    margin-top: 100px;
+}
+
+/* Add shadow to the headings */
+h2, h3 {
+    margin-top: 20px; /* You can adjust the value to your preference */
+}
+
+/* Add shadow to the headings */
+h2, h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.imgspace{
+     margin-top: 130px;
+}
+.heading{
+    margin-top: 30px;
+}
+.center{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.marginUp{
+    margin-top: 100px;
+}
+.marginUp2{
+    margin-top: 50px;
+}
+.marginUp3{
+    margin-top: 70px;
+}
+
+
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flash {
+  animation: flash 1s infinite;
+}
+
+
+
+
+.headline-container {
+    animation: fadeInOut 5s linear infinite; /* Adjust animation duration and timing as needed */
+    }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+            100% { opacity: 0; }
+        }

@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+ <div class="container mt-4">
+        <h2 class="mb-4">12 Bore </h2>
+
+        <!-- Product Showcase -->
+        <div class="row">
+    {% for product in products12bor %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ product['name'] }}</h5>
+                    <p class="card-text">{{ product['description'] }}</p>
+                    <p class="card-text"><strong>Price:</strong> ${{ product['price'] }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+  <hr>
+  <div class="container">
+
+<h4>The 12-bore shotgun</h4><p> holds a revered place in the world of firearms, renowned for its versatility, power, and widespread use in hunting, sports shooting, and self-defense. In this article, we'll delve into the rich history of 12-bore shotguns, tracing their origins, exploring notable models, and examining their enduring impact on firearms culture. Join us on a journey through time as we uncover the legacy of these iconic firearms.
+Origins of the 12-Bore Shotgun:
+The roots of the 12-bore shotgun can be traced back to the early development of smoothbore firearms. While the exact origins are difficult to pinpoint, shotguns chambered in 12-gauge (corresponding to a bore diameter of approximately 18.5 millimeters) became popular in the 19th century.
+Early Models and Innovations:
+Side-by-Side Shotguns:
+Side-by-side shotguns, featuring two barrels aligned horizontally, were among the earliest configurations of 12-bore shotguns.
+Originating in the 19th century, side-by-side shotguns were favored for their simplicity, reliability, and elegant aesthetics.
+Notable examples include the Holland & Holland Royal, Purdey Side-by-Side, and Beretta 686 Silver Pigeon.
+Over-and-Under Shotguns:
+Over-and-under shotguns, with two barrels stacked vertically, gained popularity in the mid-20th century.
+Offering improved balance and sight picture, over-and-under shotguns became the preferred choice for many hunters and sports shooters.
+Iconic models include the Browning Citori, Beretta 690 Field, and Caesar Guerini Summit.
+Pump-Action Shotguns:
+Pump-action shotguns, such as the Remington 870 and Mossberg 500 series, have also been chambered in 12-gauge.
+Featuring a manually operated pump mechanism to chamber and eject shells, pump-action shotguns offer reliability and versatility in various shooting applications.
+Semi-Automatic Shotguns:
+Semi-automatic shotguns, like the Benelli M2 and Beretta A400 series, provide rapid-fire capability with reduced felt recoil.
+Utilizing gas or inertia-driven systems, semi-automatic shotguns are favored by hunters and competitive shooters for their speed and reliability.
+Impact and Cultural Significance:
+The 12-bore shotgun has left an indelible mark on firearms culture worldwide, with a presence felt in hunting fields, shooting ranges, and even popular media. From classic side-by-side models cherished by traditionalists to cutting-edge semi-automatic designs embraced by modern sportsmen, the 12-bore shotgun continues to evolve while maintaining its timeless appeal.
+Conclusion:
+As we reflect on the history of 12-bore shotguns, we're reminded of their enduring legacy as cherished companions of hunters, sports shooters, and firearms enthusiasts. With a diverse array of models and configurations catering to a range of preferences and purposes, the 12-bore shotgun remains a symbol of craftsmanship, tradition, and the thrill of the hunt. Join us at China Arms Company as we celebrate the timeless allure of these iconic firearms.</p>
+
+
+
+
+
+     </div>  
+ 
+ {% endblock %}

@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Page Content -->
+<!--
+<div class="container text-center mt-5">
+    <div class="row justify-content-center">
+        <div class="col">
+            <creattie-embed
+                src="https://d1jj76g3lut4fe.cloudfront.net/saved_colors/86494/pQ6PuagLYRq8YpkF.json"
+                delay="1"
+                speed="100"
+                frame_rate="24"
+                trigger="loop"
+                style="width:200px; margin-left: 390px;">
+            </creattie-embed>
+            <script src="https://creattie.com/js/embed.js?id=3f6954fde297cd31b441" defer></script>
+        </div>
+    </div>
+</div>  -->
+
+<div class="container text-center">
+   <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <h2>Products</h2>
+   </div> 
+
+    <!-- Categories Section -->
+    <section class="mt-4">
+        <div class="row">
+
+            <div class="col-md-4 mb-4 text-center">
+                <a href="{{ url_for('bore30_pistols') }}">
+                    <img src="{{ url_for('static', filename='5.png') }}" class="img-fluid" alt="30 Bore Pistols">
+                </a>
+                <h3>30 Bore Pistols</h3>
+                <p>Discover the exceptional world of 30 bore pistols, where power meets precision.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <a href="{{ url_for('mm9_pistols') }}">
+                    <img src="{{ url_for('static', filename='10.png') }}" class="img-fluid" alt="9mm Pistols">
+                </a>
+                <h3>9mm Pistols</h3>
+                <p>Explore our collection of 9mm pistols, known for their accuracy and reliability.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <a href="{{ url_for('bore12_short_guns') }}">
+                    <img src="{{ url_for('static', filename='12boregroup.png') }}" class="img-fluid" alt="12 Bore Short Guns">
+                </a>
+                <h3>12 Bore Short Guns</h3>
+                <p>Discover the power and versatility of our 12 bore short guns for various shooting applications.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container text-center">
+        <div class="row">    
+            <div class="col text-center">
+                <a href="{{ url_for('Guns') }}">
+                    <img src="{{ url_for('static', filename='13.png') }}" class="img-fluid" alt="Guns">
+                </a>
+                <h3 >Guns</h3>
+                <p>Explore our wide range of guns suitable for different shooting needs.</p>
+            </div>
+            <div class="col text-center">
+                <a href="{{ url_for('ammunition') }}">
+                    <img src="{{ url_for('static', filename='ammunition.jpg') }}" class="img-fluid" alt="Ammunitions">
+                </a>
+                <h3>Ammunitions</h3>
+                <p>Find high-quality ammunition to complement your firearms.</p>
+            </div>
+            <div class="col text-center">
+                <a href="{{ url_for('Accesories') }}">
+                    <img src="{{ url_for('static', filename='kashdouble.png') }}" class="img-fluid" alt="Accessories">
+                </a>
+                <h3>Accessories</h3>
+                <p>Enhance your shooting experience with our range of accessories.</p>
+            </div>
+        </div>
+        <hr>
+            <div class="container text-center">
+
+                <p>At China Arms Company, we proudly stand as a registered and authorized arms and ammunition dealer, dedicated to delivering unparalleled products to our esteemed clientele. Committed to excellence, we strictly adhere to all government regulations, ensuring our operations maintain the highest standards of legality and integrity.For More information click
+                <a href="{{ url_for('about') }}" target="_blank" class="btn btn-outl">More About China Arms Company</a></p>
+            </div>
+            <div class="container text-center">
+                <h2>About Founder </h2>
+                
+                <p>China Arms Company was founded by Mr. Tariq Aziz son of Haji Said Rehman a well known person in weapons Expert communities , a visionary entrepreneur with a passion for firearms and a commitment to safety. Mr. Aziz's dedication to transparency, ethics, and customer satisfaction has shaped the company's principles.
+                <a href="{{ url_for('moreabout') }}">More about Tariq Aziz</a></p>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <hr>
+
+
+        <!-- Additional Sections for Each Category -->
+        <!-- Add sections for individual categories as needed -->
+
+        <!-- Contact Information -->
+        <section class="container text-center">
+            <h3>Have Questions ?</h3>
+            
+            
+            <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <br>
+            <h3>Or Fill the form and we will contact you soon.</h3>
+            
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <br>
+            <p>Your satisfaction and safety are our top priorities.</p>
+            
+        </section>
+</div> 
+{% endblock %}

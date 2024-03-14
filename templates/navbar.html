@@ -1,0 +1,55 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{{ url_for('home') }}">
+        <img src="{{ url_for('static', filename='logo.png') }}" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+        China Arms Company
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav"> 
+            <li class="nav-item">+923339139164</li> 
+            <li class="nav-item {% if request.path == url_for('home') %}active{% endif %}">
+                <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown" id="products-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <a class="dropdown-item {% if request.path == url_for('bore30_pistols') %}active{% endif %}" href="{{ url_for('bore30_pistols') }}">30 Bore Pistols</a>
+                    <a class="dropdown-item {% if request.path == url_for('mm9_pistols') %}active{% endif %}" href="{{ url_for('mm9_pistols') }}">9mm Pistols</a>
+                    <a class="dropdown-item {% if request.path == url_for('bore12_short_guns') %}active{% endif %}" href="{{ url_for('bore12_short_guns') }}">12 Bore Short Guns</a>
+                    <a class="dropdown-item {% if request.path == url_for('Guns') %}active{% endif %}" href="{{ url_for('Guns') }}">Guns</a>
+                    <a class="dropdown-item {% if request.path == url_for('ammunition') %}active{% endif %}" href="{{ url_for('ammunition') }}">Ammunition</a>                    
+                    <a class="dropdown-item {% if request.path == url_for('Accesories') %}active{% endif %}" href="{{ url_for('Accesories') }}">Accesories</a>
+
+                    <!-- Add more submenu items as needed -->
+                </div>
+            </li>
+            <li class="nav-item {% if request.path == url_for('about') %}active{% endif %}">
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            </li>
+            <li class="nav-item {% if request.path == url_for('contact') %}active{% endif %}">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+            </li>
+            <li class="nav-item {% if request.path == url_for('history') %}active{% endif %}">
+                <a class="nav-link" href="{{ url_for('history') }}">History</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+// Add the following JavaScript code to enable hover on desktops
+$(document).ready(function(){
+    $("#products-dropdown").hover(function(){
+        $(this).addClass("show");
+        $(".dropdown-menu", this).addClass("show");
+    }, function(){
+        $(this).removeClass("show");
+        $(".dropdown-menu", this).removeClass("show");
+    });
+});
+</script>

@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container text-center">
+	<div class="container">
+	<img src="{{ url_for('static', filename='founder_image.jpg') }}" class="img-fluid" alt="Founder Image" style="height: 300px; width: 200px; margin-top: 30px;">
+
+
+</div>
+   <h1>Tariq Aziz's Projects</h1>
+   <div class="row">
+       <div class="col">
+           <div class="card">
+               <img src="{{ url_for('static', filename='alilogo.png') }}" alt="Project 1" class="card-img-top">
+               <div class="card-body">
+                   <h2 class="card-title">Streamlining Tailor Shop Operations</h2>
+                   <p class="card-text">Our Tailor Shop Management System revolutionizes the way tailor shops operate, providing a comprehensive and efficient solution for managing customer measurements and enhancing workflow processes. Developed as a web-based application using Python, our system empowers tailor shops to seamlessly organize, track, and analyze customer measurements with ease.</p>
+                   <a href="{{url_for('moreaboutAli')}}" class="btn btn-primary">Read more</a>
+                    <a href="https://github.com/tariqaziz9164" class="btn">Look on GitHub</a>
+               </div>
+           </div>
+       </div>
+       <div class="col">
+           <div class="card">
+               <img src="{{ url_for('static', filename='schoollogo.png') }}" alt="Project 2" class="card-img-top">
+               <div class="card-body">
+                   <h2 class="card-title">Revolutionizing Education Management</h2>
+                   <p class="card-text">Our School Management System is a comprehensive solution designed to streamline administrative tasks, improve communication, and enhance data analysis for educational institutions. With robust CRUD (Create, Read, Update, Delete) functionality and intuitive graphical representations of key financial metrics, our system empowers schools to efficiently manage operations, track finances, and make data-driven decisions.</p>
+                   <a href="{{url_for('moreaboutSchool')}}" class="btn btn-primary">Read more</a>
+                   <a href="https://github.com/tariqaziz9164/schooldatabase" class="btn">Look on GitHub</a>
+               </div>
+           </div>
+       </div>
+       <div class="col">
+           <div class="card">
+               <img src="{{ url_for('static', filename='datalogo.png') }}" alt="Project 3" class="card-img-top">
+               <div class="card-body">
+                   <h2 class="card-title">Empowering Data-driven Decision-Making</h2>
+                   <p class="card-text">Our Data Analysis and Visualization Platform empowers organizations to unlock the full potential of their data, enabling them to make informed decisions and gain valuable insights. With intuitive features for data manipulation, cleansing, and visualization, our platform simplifies the process of analyzing complex datasets and creating dynamic dashboards that drive actionable outcomes.</p>
+                   <a href="{{url_for('moreaboutData')}}" class="btn btn-primary">Read more</a>
+                   <a href="https://github.com/tariqaziz9164/Data" class="btn">Look on GitHub</a>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+
+<h2>Story</h2>
+<p>Tariq Aziz's journey in the world of programming is underlined by a series of certifications and diplomas in electronics and computer education. His specialized interests in programming have shaped him into a proficient developer with a keen eye for detail and a commitment to staying at the forefront of technological advancements.
+<br>
+The website of China Arms Company is a testament to Tariq Aziz's technical acumen. Meticulously coded and crafted by his hands, the website reflects not only the professionalism of an arms dealer but also the sophistication of a developer deeply immersed in the digital landscape. The user-friendly interface, seamless navigation, and engaging design elements all bear the unmistakable imprint of Tariq Aziz's dedication to delivering a top-notch online experience.
+<br>
+Beyond the technical realm, Tariq Aziz's role in both founding the company and developing its digital presence highlights a rare combination of entrepreneurial vision and technical prowess. His commitment to transparency, ethics, and customer satisfaction, as mentioned earlier, is not confined to the products but extends to the very platform through which customers interact with China Arms Company.
+<br>
+In essence, Tariq Aziz emerges not only as a leader in the arms industry but also as a tech-savvy entrepreneur, bridging the gap between firearms and the digital world. His journey from being a visionary entrepreneur to a hands-on developer showcases a commitment to excellence that resonates through every facet of China Arms Company, from its foundational principles to the intricacies of its online presence.</p>
+</div>
+ <hr>
+
+<div class="container">
+	<h2>Certificates</h2>
+   <div class="row">
+  	 <div class="col">
+       <div class="card">
+         <img src="{{ url_for('static', filename='MLpanda.png') }}" alt="certificate1">
+         <h2>Certificate of Pandas a powerful python library for cleaning data.</h2>
+         <p>Pandas is a great tool for data science.</p>
+         <p><a href="#">Read more</a></p>
+       </div>
+     </div>
+     <hr>
+     <div class="col">   
+       <div class="card">
+         <img src="{{ url_for('static', filename='MLintro.png') }}" alt="certificate2">
+        <h2>Certificate of Machine Learning Introduction</h2>
+        <p>In this short course my concept of ML is clear.</p>
+        <p><a href="#">Read more</a></p>
+       </div>
+     </div>
+     <div class="col">    
+      <div class="card">
+         <img src="{{ url_for('static', filename='datavisualization.png') }}" alt="certificate3">
+         <h2>Data Visualization</h2>
+         <p>After cleaning the the next step is to exposed data information in shape of graph or chart.</p>
+         <p><a href="#">Read more</a></p>
+      </div>
+     </div>
+   </div>
+</div>
+
+<div class="container">
+   <div class="row">
+  	 <div class="col">
+       <div class="card">
+         <img src="{{ url_for('static', filename='hrdatasciencemanagement.png') }}" alt="certificate1">
+         <h2>Project 4</h2>
+         <p>Description of project 4.</p>
+         <p><a href="#">Read more</a></p>
+       </div>
+     </div>
+     <div class="col">   
+       <div class="card">
+         <img src="{{ url_for('static', filename='pythondataanalysis.png') }}" alt="certificate2">
+        <h2>Project 5</h2>
+        <p>Description of project 5.</p>
+        <p><a href="#">Read more</a></p>
+       </div>
+     </div>
+     <div class="col">    
+      <div class="card">
+         <img src="{{ url_for('static', filename='paracticaldatabaseLinkdin.png') }}" alt="certificate3">
+         <h2>Project 6</h2>
+         <p>Description of project 6.</p>
+         <p><a href="#">Read more</a></p>
+      </div>
+     </div>
+   </div>
+</div>
+{% endblock %}
