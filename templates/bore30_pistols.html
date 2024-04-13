@@ -6,20 +6,20 @@
 
         <!-- Product Showcase -->
         <div class="row">
-    {% for product in products30bor %}
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
+           {% for product in products30bor %}
+             <div class="col-md-4 mb-4">
+                <div class="card">
+                   <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
 
-                <div class="card-body">
-                    <h5 class="card-title">{{ product['name'] }}</h5>
-                    <p class="card-text">{{ product['description'] }}</p>
-                    <p class="card-text"><strong>Price:</strong> ${{ product['price'] }}</p>
-                </div>
-            </div>
+                   <div class="card-body">
+                       <h5 class="card-title">{{ product['name'] }}</h5>
+                       <p class="card-text">{{ product['description'] }}</p>
+                       <p class="card-text"><strong>Price:</strong> Rs{{ product['price'] }}</p>
+                   </div>
+               </div>
+             </div>
+           {% endfor %}
         </div>
-    {% endfor %}
- </div>
         <!-- Information about 30 Bore Pistols -->
         <section class="container text-center">
             <h3>About 30 Bore Pistols</h3>
@@ -49,8 +49,6 @@
             <h4> Post-Soviet Era: </h4>
             <p>Following the dissolution of the Soviet Union, Russian firearm manufacturers continued to produce 30 bore pistols, catering to both domestic and export markets. Modern Russian-made pistols often incorporate updated features and materials while retaining the robustness of earlier designs.</p>
 
-          
-
-        </section>
+          </section>
     </div>
 {% endblock %}

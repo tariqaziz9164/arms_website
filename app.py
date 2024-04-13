@@ -125,12 +125,12 @@ def moreaboutData():
 @app.route('/bore30_pistols')
 def bore30_pistols():
     products30bor = [
-        {'name': '30 Bore Pistol A', 'description': 'High-quality 30 bore pistol with precision engineering.', 'price': 500, 'image': '30bore1.jpg'},
-        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol for various shooting applications.', 'price': 600, 'image': '30bore2.jpg'},
-        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals.', 'price': 700, 'image': '30bore3.jpg'},
-        {'name': '30 Bore Pistol D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling.', 'price': 800, 'image': '30bore4.jpg'},
-        {'name': '30 Bore Pistol E', 'description': 'Precision barrel and effective stopping power in this 30 bore pistol.', 'price': 900, 'image': '30bore5.jpg'},
-        {'name': '30 Bore Pistol F', 'description': 'Reliable and durable 30 bore pistol for self-defense and sport shooting.', 'price': 1000, 'image': '30bore.jpg'},
+        {'name': '30 Bore Pistol A', 'description': 'High-quality 30 bore pistol with precision engineering. Russian Interchange.', 'price': 25000, 'image': '30bore1.jpg'},
+        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol spare parts for long life.', 'price': 15000, 'image': '30bore2.jpg'},
+        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals made by our experts.', 'price': 22000, 'image': '30bore3.jpg'},
+        {'name': '30 Bore Pistol D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling and orignal barrel.', 'price': 30000, 'image': '30bore4.jpg'},
+        {'name': '30 Bore Pistol E', 'description': 'Precision barrel and effective stopping power in this 30 bore zistawa pistol.', 'price': 30000, 'image': '30bore5.jpg'},
+        {'name': '30 Bore Pistol F', 'description': 'Made by Order pistol 7 short and 14 shorts see more design.', 'price': 35000, 'image': '30bore.jpg'},
 
         
     ]
@@ -139,15 +139,15 @@ def bore30_pistols():
 @app.route('/mm9_pistols')
 def mm9_pistols():
     products9mm = [
-        {'name': '9mm Pistol A', 'description': 'Glock17 9mm pistol with precision engineering.', 'price':  35000, 'image': 'Glock9mm.webp'},
+        {'name': '9mm Pistol A', 'description': 'Glock17 9mm pistol with weightless engineering.', 'price':  35000, 'image': 'Glock9mm.webp'},
         {'name': '9mm Pistol B', 'description': 'Glock19 9mm pistol for various shooting applications.', 'price': 40000, 'image': 'glock2.png'},
-        {'name': '9mm Pistol C', 'description': 'Versatile and accurate 9mm pistol suitable for professionals.', 'price': 900, 'image': 'images.jpeg'},
-        {'name': '9mm Pistol D', 'description': 'Ergonomically designed 9mm pistol for comfortable handling.', 'price': 1000, 'image': 'images (1).jpeg'},
-        {'name': '9mm Pistol E', 'description': 'Precision barrel and effective stopping power in this 9mm pistol.', 'price': 1100, 'image': '9mm_.38_pistol.jpg'},
-        {'name': '9mm Pistol F', 'description': 'Reliable and durable 9mm pistol for self-defense and sport shooting.', 'price': 1200, 'image': 'glock12.jpg'},
-        {'name': '9mm Pistol G', 'description': 'Compact design and safety features in this 9mm pistol.', 'price': 1300, 'image': 'glock11.jpg'},
-        {'name': '9mm Pistol H', 'description': 'Balanced combination of power and accuracy in this 9mm pistol.', 'price': 1400, 'image': 'glock26.jpg'},
-        {'name': '9mm Pistol H', 'description': 'Balanced combination of power and accuracy in this 9mm pistol.', 'price': 1400, 'image': 'glock17.jpg'},
+        {'name': '9mm Pistol C', 'description': 'Versatile and accurate 9mm pistol suitable for professionals.', 'price': 30000, 'image': 'images.jpeg'},
+        {'name': '9mm Pistol D', 'description': 'Ergonomically designed 9mm pistol for comfortable handling.', 'price': 30000, 'image': 'images (1).jpeg'},
+        {'name': '9mm Pistol E', 'description': 'Precision barrel and effective stopping power in this 9mm pistol.', 'price': 35000, 'image': '9mm_.38_pistol.jpg'},
+        {'name': '9mm Pistol F', 'description': 'Reliable and durable 9mm pistol for self-defense and sport shooting.', 'price': 45000, 'image': 'glock12.jpg'},
+        {'name': '9mm Pistol G', 'description': 'Compact design and safety features in this 9mm Glock34 pistol.', 'price': 25000, 'image': 'glock11.jpg'},
+        {'name': '9mm Pistol H', 'description': 'Balanced combination of power and accuracy in this 9mm Glock26 pistol.', 'price': 30000, 'image': 'glock26.jpg'},
+        {'name': '9mm Pistol H', 'description': 'Balanced combination of power and accuracy in this 9mm Glock17 pistol.', 'price': 25000, 'image': 'glock17.jpg'},
         
     ]    
     return render_template('mm9_pistols.html', products9mm=products9mm)  
@@ -155,12 +155,12 @@ def mm9_pistols():
 @app.route('/bore12_short_guns')
 def bore12_short_guns():
     products12bor = [
-        {'name': '12Bore A', 'description': 'High-quality 12 bore with precision engineering.', 'price': 500, 'image': '12bore_semiauto_bikal.jpg'},
-        {'name': '12Bore B', 'description': 'Durable and reliable 12 bore for various shooting applications.', 'price': 600, 'image': '12bore_semiauto1.jpg'},
-        {'name': '12Bore C', 'description': 'Precision barrel and effective stopping power in this 9mm pistol.', 'price': 700, 'image': '12bore_semiauto.jpg'},
-        {'name': '12Bore D', 'description': 'Reliable and durable 9mm pistol for self-defense and sport shooting.', 'price': 800, 'image': '12bore_turky.jpg'},
-        {'name': '12Bore D', 'description': 'Compact design and safety features in this 9mm pistol.', 'price': 800, 'image': '12boresiga.jpg'},
-        {'name': '12Bore E', 'description': 'High-performance 9mm pistol suitable for various shooting scenarios.', 'price': 800, 'image': '12bore_repeator.jpg'},
+        {'name': '12Bore A', 'description': 'High-quality 12 bore with precision engineering.', 'price': 35000, 'image': '12bore_semiauto_bikal.jpg'},
+        {'name': '12Bore B', 'description': 'Durable and reliable 12 bore for various shooting applications.', 'price': 30000, 'image': '12bore_semiauto1.jpg'},
+        {'name': '12Bore C', 'description': 'Precision barrel and effective stopping power in this 9mm pistol.', 'price': 40000, 'image': '12bore_semiauto.jpg'},
+        {'name': '12Bore D', 'description': 'Reliable and durable 9mm pistol for self-defense and sport shooting.', 'price': 35000, 'image': '12bore_turky.jpg'},
+        {'name': '12Bore D', 'description': 'Compact design and safety features in this 9mm pistol.', 'price': 30000, 'image': '12boresiga.jpg'},
+        {'name': '12Bore E', 'description': 'High-performance 9mm pistol suitable for various shooting scenarios.', 'price': 35000, 'image': '12bore_repeator.jpg'},
 
         
     ]    
