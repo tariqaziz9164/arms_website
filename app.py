@@ -185,11 +185,11 @@ def Guns():
 def ammunition():
 
     ammunition = [
-        {'name': '30 Bore Ammunition', 'description': 'High-quality 30 bore pistol with precision engineering.', 'price': 500, 'image': 'ammu1.png'},
-        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol for various shooting applications.', 'price': 600, 'image': 'ammum16.jpeg'},
-        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals.', 'price': 700, 'image': 'ammu30.png'},
-        {'name': '30 Bore Pistol D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling.', 'price': 800, 'image': '30borepistol_4.png'},
-        {'name': '30 Bore Pistol E', 'description': 'Precision barrel and effective stopping power in this 30 bore pistol.', 'price': 900, 'image': '30borepistol_5.png'},
+        {'name': '30 Bore Ammunition A', 'description': 'High-quality 30 bore pistol with precision engineering.', 'price': 500, 'image': 'ammu1.png'},
+        {'name': '30 Bore Ammunition B', 'description': 'Durable and reliable 30 bore pistol for various shooting applications.', 'price': 600, 'image': 'ammum16.jpeg'},
+        {'name': '30 Bore Ammunition C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals.', 'price': 700, 'image': 'ammu30.png'},
+        {'name': '30 Bore Ammunition D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling.', 'price': 800, 'image': 'ammunition_image1.jpg'},
+        {'name': '30 Bore Amunition E', 'description': 'Precision barrel and effective stopping power in this 30 bore pistol.', 'price': 900, 'image': '30borepistol_5.png'},
         {'name': '30 Bore Pistol F', 'description': 'Reliable and durable 30 bore pistol for self-defense and sport shooting.', 'price': 1000, 'image': '30borepistol_6.png'},
         {'name': '30 Bore Pistol G', 'description': 'Compact design and safety features in this 30 bore pistol.', 'price': 1100, 'image': '30borepistol_7.png'},
         {'name': '30 Bore Pistol H', 'description': 'Balanced combination of power and accuracy in this 30 bore pistol.', 'price': 1200, 'image': '30borepistol_8.png'},
@@ -215,4 +215,4 @@ def Accesories():
 if __name__ == '__main__':
     with app.app_context():
        db.create_all()
-    app.run(debug=True)
+    app.run(debug=False)
