@@ -1,28 +1,41 @@
 <!-- footer.html -->
-<footer class="footer mt-auto py-3 bg-dark">
+<footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-     <!--   <div class="row">
-            <h2>Follw us on Social Media</h2>
-            <div class="col-md-4 col-sm-12 text-center">
-                 Social Media Links
-                <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-danger"><i class="fab fa-youtube"></i> YouTube</a>
-                <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-primary"><i class="fab fa-facebook"></i> Facebook</a>
-                <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            </div> </div> -->
 
           <div class="row text-center">
 
-                 <div class="col text-center">
+                 <div class="col-md-4 mb-4 text-center">
                   <a href="{{ url_for('home') }}">
-                  <img src="{{ url_for('static', filename='logo.png') }}" width="50" height="50" alt="Logo">
+                  <img src="{{ url_for('static', filename='logowhite.png') }}" width="50" height="50" alt="Logo">
                   <p>China Arms Company an authorised and trusted Dealer of NPB Arms.</p>
-                 </a>
+
+                    </a>
+
+                 <div class="container-fluid text-center socialLinks">
+                   <div class="row align-items-start">
+                     <div class="col">
+                        <a href="https://api.whatsapp.com/send?phone=3339139164" target="_blank" class="whatsapp-icon">
+                         <img src="{{ url_for('static', filename='whatsapp.svg') }}" alt="WhatsApp">
+                        </a>
+                     </div>
+                     <div class="col">
+                        <a href="https://facebook.com/kpkhunters" target="_blank" class="bs-primary">
+                           <img src="{{ url_for('static', filename='facebook.svg') }}" alt="Facebook">
+                        </a>
+                     </div>
+                     <div class="col">
+                        <a href="https://www.instagram.com/your-instagram-page" target="_blank">
+                           <img src="{{ url_for('static', filename='instagram.svg') }}" alt="Instagram">
+                        </a>
+                     </div>
+                  </div>
+           </div>
                      
-                 </div>
+ </div>           
             
                 
 
-                 <div class="col text-center">   
+                 <div class="col-md-4 mb-4 text-center">   
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url_for('home') }}">Home</a>
@@ -38,7 +51,7 @@
                             </li>
                         </ul>
                  </div>
-                 <div class="col text-center">
+                 <div class="col-md-4 mb-4 text-center">
                    <a href="mailto:digitalonlinelogic@gmail.com">digitalonlinelogic@gmail.com</a>
                    
 

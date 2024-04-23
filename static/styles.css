@@ -2,20 +2,24 @@
 
 /* Add space from the top */
 body {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 /* Add shadow to the headings */
 h2, h3 {
-    margin-top: 20px; /* You can adjust the value to your preference */
-}
-
-/* Add shadow to the headings */
-h2, h3 {
+    margin-top: 40px; /* You can adjust the value to your preference */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.headingOne{
+    margin-top: 20px;
+}
+
+.image-increase {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 .imgspace{
-     margin-top: 130px;
+     margin-top: 100px;
 }
 .heading{
     margin-top: 30px;
@@ -33,6 +37,17 @@ h2, h3 {
 .marginUp3{
     margin-top: 70px;
 }
+.socialLinks{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -140,8 +140,8 @@ def bore30_pistols():
 def mm9_pistols():
     products9mm = [
         {'name': '9mm Pistol A', 'description': 'Glock17 9mm pistol with weightless engineering.', 'price':  35000, 'image': 'Glock9mm.webp'},
-        {'name': '9mm Pistol B', 'description': 'Glock19 9mm pistol for various shooting applications.', 'price': 40000, 'image': 'glock2.png'},
-        {'name': '9mm Pistol C', 'description': 'Versatile and accurate 9mm pistol suitable for professionals.', 'price': 30000, 'image': 'images.jpeg'},
+        {'name': '9mm Pistol B', 'description': 'Glock19 9mm pistol for various shooting applications.', 'price': 40000, 'image': 'zig1_1.png'},
+        {'name': '9mm Pistol C', 'description': 'Versatile and accurate 9mm pistol suitable for professionals.', 'price': 30000, 'image': 'gbrown_1.jpeg'},
         {'name': '9mm Pistol D', 'description': 'Ergonomically designed 9mm pistol for comfortable handling.', 'price': 30000, 'image': 'images (1).jpeg'},
         {'name': '9mm Pistol E', 'description': 'Precision barrel and effective stopping power in this 9mm pistol.', 'price': 35000, 'image': '9mm_.38_pistol.jpg'},
         {'name': '9mm Pistol F', 'description': 'Reliable and durable 9mm pistol for self-defense and sport shooting.', 'price': 45000, 'image': 'glock12.jpg'},
@@ -185,15 +185,11 @@ def Guns():
 def ammunition():
 
     ammunition = [
-        {'name': '30 Bore Ammunition A', 'description': 'High-quality 30 bore pistol with precision engineering.', 'price': 500, 'image': 'ammu1.png'},
-        {'name': '30 Bore Ammunition B', 'description': 'Durable and reliable 30 bore pistol for various shooting applications.', 'price': 600, 'image': 'ammum16.jpeg'},
-        {'name': '30 Bore Ammunition C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals.', 'price': 700, 'image': 'ammu30.png'},
-        {'name': '30 Bore Ammunition D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling.', 'price': 800, 'image': 'ammunition_image1.jpg'},
-        {'name': '30 Bore Amunition E', 'description': 'Precision barrel and effective stopping power in this 30 bore pistol.', 'price': 900, 'image': '30borepistol_5.png'},
-        {'name': '30 Bore Pistol F', 'description': 'Reliable and durable 30 bore pistol for self-defense and sport shooting.', 'price': 1000, 'image': '30borepistol_6.png'},
-        {'name': '30 Bore Pistol G', 'description': 'Compact design and safety features in this 30 bore pistol.', 'price': 1100, 'image': '30borepistol_7.png'},
-        {'name': '30 Bore Pistol H', 'description': 'Balanced combination of power and accuracy in this 30 bore pistol.', 'price': 1200, 'image': '30borepistol_8.png'},
-        {'name': '30 Bore Pistol I', 'description': 'High-performance 30 bore pistol suitable for various shooting scenarios.', 'price': 1300, 'image': '30borepistol_9.png'},
+        {'name': 'Ammunition Types', 'description': 'Ammunition with precision engineering.', 'image': 'ammu1.png'},
+        {'name': 'M16 M4 Ammunition', 'description': 'Durable and reliable Rounds for various shooting applications.', 'price': '3000/10', 'image': 'ammum16.jpeg'},
+        {'name': '30 Bore Ammunition Qualities', 'description': 'Versatile and accurate 30 bore pistol rounds suitable for professionals.', 'price': '800/10', 'image': 'ammu30.png'},
+        {'name': 'Others Bore', 'description': 'Ergonomically designed pistols rounds for comfortable handling.','image': 'ammunition_image1.jpg'},
+        {'name': '9mm bullets', 'description': '9mm pistols rounds for comfortable and accurate shooting.', 'price': '800/10' ,'image': '9mmammu.webp'},
         
     ]    
     return render_template('ammunition.html', products=ammunition)     
@@ -215,4 +211,4 @@ def Accesories():
 if __name__ == '__main__':
     with app.app_context():
        db.create_all()
-    app.run(debug=False)
+    app.run(debug=True)

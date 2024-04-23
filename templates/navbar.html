@@ -1,66 +1,60 @@
 <!-- navbar.html -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a class="navbar-brand" href="{{ url_for('home') }}">
-        <img src="{{ url_for('static', filename='logo.png') }}" width="50" height="50" class="d-inline-block align-top" alt="Logo">
-        China Arms Company
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav"> 
-             
-            <li class="nav-item {% if request.path == url_for('home') %}active{% endif %}">
-                <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='logo.png') }}" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+            China Arms Company
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+                 
+                <li class="nav-item {% if request.path == url_for('home') %}active{% endif %}">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+                </li>
 
-            <li class="nav-item dropdown" id="products-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Products
-                </a>
-                <div class="dropdown-menu" aria-labelledby="productsDropdown">
-                    <a class="dropdown-item {% if request.path == url_for('bore30_pistols') %}active{% endif %}" href="{{ url_for('bore30_pistols') }}">30 Bore Pistols</a>
-                    <a class="dropdown-item {% if request.path == url_for('mm9_pistols') %}active{% endif %}" href="{{ url_for('mm9_pistols') }}">9mm Pistols</a>
-                    <a class="dropdown-item {% if request.path == url_for('bore12_short_guns') %}active{% endif %}" href="{{ url_for('bore12_short_guns') }}">12 Bore Short Guns</a>
-                    <a class="dropdown-item {% if request.path == url_for('Guns') %}active{% endif %}" href="{{ url_for('Guns') }}">Guns</a>
-                    <a class="dropdown-item {% if request.path == url_for('ammunition') %}active{% endif %}" href="{{ url_for('ammunition') }}">Ammunition</a>                    
-                    <a class="dropdown-item {% if request.path == url_for('Accesories') %}active{% endif %}" href="{{ url_for('Accesories') }}">Accesories</a>
-                </div>
-            </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <li><a class="dropdown-item {% if request.path == url_for('bore30_pistols') %}active{% endif %}" href="{{ url_for('bore30_pistols') }}">30 Bore Pistols</a></li>
+                        <li><a class="dropdown-item {% if request.path == url_for('mm9_pistols') %}active{% endif %}" href="{{ url_for('mm9_pistols') }}">9mm Pistols</a></li>
+                        <li><a class="dropdown-item {% if request.path == url_for('bore12_short_guns') %}active{% endif %}" href="{{ url_for('bore12_short_guns') }}">12 Bore Short Guns</a></li>
+                        <li><a class="dropdown-item {% if request.path == url_for('Guns') %}active{% endif %}" href="{{ url_for('Guns') }}">Guns</a></li>
+                        <li><a class="dropdown-item {% if request.path == url_for('ammunition') %}active{% endif %}" href="{{ url_for('ammunition') }}">Ammunition</a></li>
+                        <li><a class="dropdown-item {% if request.path == url_for('Accesories') %}active{% endif %}" href="{{ url_for('Accesories') }}">Accesories</a></li>
+                    </ul>
+                </li>
 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('moreabout') }}">About Tariq Aziz</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('about') }}">About CAC</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('moreabout_web') }}">About Web Development</a></li>
+                    </ul>
+                </li>
 
-            <li class="nav-item dropdown" id = "about-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                </a>
-                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-                    <a class="dropdown-item" href="{{ url_for('moreabout') }}">About Tariq Aziz</a>
-                    <a class="dropdown-item" href="{{ url_for('about') }}">About CAC</a>
-                    <a class="dropdown-item" href="{{ url_for('moreabout_web') }}">About Web Development</a>
-                </div>
-            </li>
+                <li class="nav-item {% if request.path == url_for('contact') %}active{% endif %}">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
 
-
-            <li class="nav-item {% if request.path == url_for('contact') %}active{% endif %}">
-                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-            </li>
-            <li class="nav-item {% if request.path == url_for('history') %}active{% endif %}">
-                <a class="nav-link" href="{{ url_for('history') }}">History</a>
-            </li>
-        </ul>
+                <li class="nav-item {% if request.path == url_for('history') %}active{% endif %}">
+                    <a class="nav-link" href="{{ url_for('history') }}">History</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-<script>
-    // Add the following JavaScript code to enable hover on desktops
-    $(document).ready(function(){
-        $("#products-dropdown, #about-dropdown").hover(function(){
-            $(this).addClass("show");
-            $(".dropdown-menu", this).addClass("show");
-        }, function(){
-            $(this).removeClass("show");
-            $(".dropdown-menu", this).removeClass("show");
-        });
-    });
-</script>
+<!-- Include Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
