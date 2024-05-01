@@ -9,7 +9,7 @@
            {% for product in products30bor %}
              <div class="col-md-4 mb-4">
                 <div class="card">
-                   <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top" alt="{{ product['name'] }}">
+                   <img src="{{ url_for('static', filename=product['image']) }}" class="card-img-top item-link" alt="{{ product['name'] }}">
 
                    <div class="card-body">
                        <h5 class="card-title">{{ product['name'] }}</h5>

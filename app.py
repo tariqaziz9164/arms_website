@@ -81,6 +81,11 @@ def about():
 def history():
     return render_template('history.html')
 
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')    
+
 @app.route('/moreinfo')
 def moreinfo():
     return render_template('moreinfo.html')
@@ -126,12 +131,12 @@ def moreaboutData():
 def bore30_pistols():
     products30bor = [
         {'name': '30 Bore Pistol A', 'description': 'High-quality 30 bore pistol with precision engineering. Russian Interchange.', 'price': 25000, 'image': '30bore1.jpg'},
-        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol spare parts for long life.', 'price': 15000, 'image': '30bore2.jpg'},
-        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals made by our experts.', 'price': 22000, 'image': '30bore3.jpg'},
+        {'name': '30 Bore Pistol F', 'description': 'Made by Order pistol 7 short and 14 shorts see more design.', 'price': 35000, 'image': '30bore.jpg'},
+        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals made by our experts.', 'price': 22000, 'image': '30Bore_pistol11.png'},
         {'name': '30 Bore Pistol D', 'description': 'Ergonomically designed 30 bore pistol for comfortable handling and orignal barrel.', 'price': 30000, 'image': '30bore4.jpg'},
         {'name': '30 Bore Pistol E', 'description': 'Precision barrel and effective stopping power in this 30 bore zistawa pistol.', 'price': 30000, 'image': '30bore5.jpg'},
-        {'name': '30 Bore Pistol F', 'description': 'Made by Order pistol 7 short and 14 shorts see more design.', 'price': 35000, 'image': '30bore.jpg'},
-
+        
+        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol spare parts for long life.', 'price': 15000, 'image': '30bore2.jpg'},
         
     ]
     return render_template('bore30_pistols.html', products30bor=products30bor)  
@@ -199,9 +204,9 @@ def ammunition():
 def Accesories():
 
     accesories = [
-        {'name': '30 Bore Pistol A', 'description': 'High-quality 30 bore pistol with precision engineering.', 'price': 500, 'image': 'kaash1.jpeg'},
-        {'name': '30 Bore Pistol B', 'description': 'Durable and reliable 30 bore pistol for various shooting applications.', 'price': 600, 'image': 'kaash2.jpeg'},
-        {'name': '30 Bore Pistol C', 'description': 'Versatile and accurate 30 bore pistol suitable for professionals.', 'price': 700, 'image': 'kaash3.jpeg'},
+        {'name': 'Smart Paoch', 'description': 'High-quality for all pistols', 'price': 500, 'image': 'kaash1.jpeg'},
+        {'name': 'Smart Gahra', 'description': 'Durable and reliable for all 30 bore and 9mm pistols.', 'price': 600, 'image': 'kaash2.jpeg'},
+        {'name': 'Old type Gahra', 'description': 'Accurate for 30 bore pistol suitable for professionals.', 'price': 3000, 'image': 'kaash3.jpeg'},
 
         
     ]    

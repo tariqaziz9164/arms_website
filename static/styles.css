@@ -41,11 +41,49 @@ h2, h3 {
     margin-top: 20px;
 }
 
+#animation-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Ensure animation is behind other content */
+    }
 
 
 
+.item-link {
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+.item-link:hover img {
+        transform: scale(1.1); /* Example of a hover effect */
+    }
 
 
+
+.item-link:hover::before {
+        opacity: 1;
+    }
+
+.item-link h3,
+.item-link p {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+.item-link:hover h3,
+.item-link:hover p {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-10px); /* Example of an animated transition */
+    }
 
 
 
